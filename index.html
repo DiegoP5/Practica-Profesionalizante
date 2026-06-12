@@ -1,0 +1,136 @@
+<!-- punto 1: Estructura básica del documento HTML -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- punto 2: Título de la página -->
+    <title>Inscripciones Hogwarts</title>
+</head>
+<body >
+
+    <!-- punto 2: Encabezado principal -->
+    <header>
+        <h1>Colegio Hogwarts de Magia y Hechicería</h1>
+    </header>
+
+    <main>
+
+        <!-- punto 2: Primera sección con subtítulo y párrafos -->
+        <section>
+            <h2>Bienvenidos al Nuevo Año Escolar</h2>
+
+            <p>Estimado mago o bruja, nos complace informarle que ha sido aceptado en el colegio de magia más prestigioso del mundo. Aquí aprenderá a dominar las artes mágicas, defenderse de las fuerzas oscuras y preparar las pociones más complejas.</p>
+
+            <p>El trimestre comienza el 1 de septiembre. El Sombrero Seleccionador lo esperará en el Gran Comedor a su llegada para asignarle su casa.</p>
+
+            <!-- Consigna 3: Imagen con atributos src y alt -->
+             <a href="https://www.gettyimages.es/fotos/harry-potter-castle" target="_blank">
+                 <img src="https://i.blogs.es/753e95/harry-potter-y-la-piedra-filosofal/500_333.jpeg" alt="Castillo antiguo rodeado de montañas que recuerda a Hogwarts">
+                </a>
+        </section>
+
+        <!-- punto 2: Segunda sección con subtítulo y párrafos -->
+        <section>
+            <h2>Preparación para las Clases</h2>
+
+            <p>Antes de abordar el Expreso de Hogwarts en la Plataforma 9¾, asegúrese de adquirir todos los materiales obligatorios en el Callejón Diagon.</p>
+
+            <h3>Lista de Uniforme y Equipo:</h3>
+
+            <!-- punto 4: Lista desordenada -->
+            <ul>
+                <li>Tres túnicas sencillas de trabajo (negras).</li>
+                <li>Un sombrero puntiagudo para uso diario.</li>
+                <li>Un caldero de peltre (medida número 2).</li>
+            </ul>
+
+            <h3>Asignaturas del primer año:</h3>
+
+            <!-- punto 4: Lista ordenada -->
+            <ol>
+                <li>Transformaciones con la profesora McGonagall.</li>
+                <li>Defensa Contra las Artes Oscuras.</li>
+                <li>Pociones con el profesor Snape.</li>
+            </ol>
+        </section>
+
+        <!-- punto 3: Enlaces -->
+        <section>
+            <h2>Enlaces de Interés</h2>
+
+            <!-- Enlace que abre en nueva pestaña -->
+            <p>Para conocer tu casa oficial antes de llegar, puedes hacer el test en el sitio de <a href="https://www.wizardingworld.com" target="_blank">Wizarding World</a> (se abre en una pestaña nueva).</p>
+
+            <!-- Enlace que abre en la misma pestaña -->
+            <p>Si necesitas revisar las reglas de la escuela, lee el reglamento en la sección de <a href="#formulario-inscripcion">Registro de Estudiantes</a> (se abre en la misma pestaña).</p>
+        </section>
+
+        <!-- punto 6: Figura con imagen y leyenda -->
+        <section>
+            <h2>La Mascota Escolar</h2>
+            <figure>
+                <img src="https://wallpapers.com/images/high/aesthetic-harry-potter-white-owl-mo6i5xcd40ktagdc.webp" alt="Lechuza blanca en la nieve">
+                <figcaption>Las lechuzas blancas son las preferidas por los estudiantes para enviar y recibir correspondencia mágica.</figcaption>
+            </figure>
+        </section>
+
+        <!-- Consigna 5: Formulario -->
+        <section id="formulario-inscripcion">
+            <h2>Formulario de Registro de Alumnos</h2>
+
+            <form action="#">
+
+                <!-- Campo de texto obligatorio -->
+                <p>
+                    <label for="nombre-mago">Nombre Completo del Mago/Bruja:</label>
+                    <input type="text" id="nombre-mago" name="nombre-mago" required>
+                </p>
+
+                <!-- Grupo de botones radio -->
+                <p>
+                    <label>¿Qué mascota traerás a Hogwarts?</label><br>
+
+                    <input type="radio" id="mascota1" name="mascota" value="lechuza" checked>
+                    <label for="mascota1">Lechuza</label><br>
+
+                    <input type="radio" id="mascota2" name="mascota" value="gato">
+                    <label for="mascota2">Gato</label><br>
+
+                    <input type="radio" id="mascota3" name="mascota" value="sapo">
+                    <label for="mascota3">Sapo</label>
+                </p>
+
+                <!-- Grupo de casillas de verificación -->
+                <p>
+                    <label>Selecciona tus áreas de interés mágico:</label><br>
+
+                    <input type="checkbox" id="interes1" name="intereses" value="quidditch">
+                    <label for="interes1">Jugar al Quidditch</label><br>
+
+                    <input type="checkbox" id="interes2" name="intereses" value="duelos">
+                    <label for="interes2">Club de Duelos</label><br>
+
+                    <input type="checkbox" id="interes3" name="intereses" value="criaturas">
+                    <label for="interes3">Cuidado de Criaturas Mágicas</label>
+                </p>
+
+                <!-- Botón de envío -->
+                <p>
+                    <button type="submit">Enviar Inscripción a Hogwarts</button>
+                </p>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- punto 7: Footer con párrafo y enlace -->
+    <footer>
+        <p>&copy; 2026 Ministerio de Magia - Departamento de Educación Mágica.</p>
+        <p><a href="mailto:lechuzas@hogwarts.edu">Enviar lechuza de soporte (Email)</a></p>
+    </footer>
+
+</body>
+</html>
