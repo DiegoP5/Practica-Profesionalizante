@@ -2,6 +2,13 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- todo centro en todo tipo de pantalas en "css"-->
+    <style>
+     body {margin: 0;padding: 10px;text-align: center;font-family: Arial, sans-serif;}
+    img {max-width: 100%;height: auto;}
+    table {width: 90%;margin: auto;}
+    section {padding: 10px;}
+</style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -13,44 +20,40 @@
 <!--imagen de fondo-->
    <body background="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGfWQFD6CTBVB86qF98QwAQo743Ix2IdJ3ZfhWShSYdakcQHDLRckGvrE&s=10" text="white">
     
-    <!--todo el bloque centrado-->
-    <center>
     <!-- punto 2: Encabezado principal -->
     <header>
-        <h1>Colegio Hogwarts de Magia y Hechicería</h1>
+        <h1> <font color="gold">Colegio Hogwarts de Magia y Hechicería </font></h1>
+           <marquee>✨ ¡Las inscripciones para Hogwarts están abiertas! ✨</marquee>
     </header>
 
     <main>
 
         <!-- punto 2: Primera sección con subtítulo y párrafos -->
         <section>
-            <h2>Bienvenidos al Nuevo Año Escolar</h2>
+            <h2> <font color="LightBlue">🦉 Bienvenidos al Nuevo Año Escolar 🏰</font></h2>
 
-            <p>Estimado mago o bruja, nos complace informarle que ha sido aceptado en el colegio de magia más prestigioso del mundo. Aquí aprenderá a dominar las artes mágicas, defenderse de las fuerzas oscuras y preparar las pociones más complejas.</p>
+            <p> <font color ="black">Estimado mago o bruja, nos complace informarle que ha sido aceptado en el colegio de magia más prestigioso del mundo. Aquí aprenderá a dominar las artes mágicas, defenderse de las fuerzas oscuras y preparar las pociones más complejas.</p>
 
-            <p>El trimestre comienza el 1 de septiembre. El Sombrero Seleccionador lo esperará en el Gran Comedor a su llegada para asignarle su casa.</p>
+            El trimestre comienza el 1 de septiembre. El Sombrero Seleccionador lo esperará en el Gran Comedor a su llegada para asignarle su casa.</font></p>
 
             <!-- Consigna 3: Imagen con atributos src y alt -->
              <a href="https://www.gettyimages.es/fotos/harry-potter-castle" target="_blank">
                  <img src="https://i.blogs.es/753e95/harry-potter-y-la-piedra-filosofal/500_333.jpeg" alt="Castillo antiguo rodeado de montañas que recuerda a Hogwarts">
-                 <figcaption>
-                    <font color="white">
-                    El majestuoso castillo de Hogwarts, hogar de generaciones de magos y brujas.
-                    </font>
-                </figcaption>
+                 <figcaption><font color="white">El majestuoso castillo de Hogwarts, hogar de generaciones de magos y brujas.</font></figcaption>
                 </a>
         </section>
+        <hr width="70%">
 
         <!-- punto 2: Segunda sección con subtítulo y párrafos -->
         <section>
-            <h2>Preparación para las Clases</h2>
+            <h2> <font color="yellow">📚 Preparación para las Clases</font> </h2>
 
-            <p>Antes de abordar el Expreso de Hogwarts en la Plataforma 9¾, asegúrese de adquirir todos los materiales obligatorios en el Callejón Diagon.</p>
+            <p> <font color="white">Antes de abordar el Expreso de Hogwarts en la Plataforma 9¾, asegúrese de adquirir todos los materiales obligatorios en el Callejón Diagon.</font></p>
 
             <h3>Lista de Uniforme y Equipo:</h3>
 
             <!-- punto 4: Lista desordenada -->
-            <ul  </ul style="list-style-position: inside;">            
+            <ul style="list-style-position: inside;">            
                 <li>Tres túnicas sencillas de trabajo (negras).</li>
                 <li>Un sombrero puntiagudo para uso diario.</li>
                 <li>Un caldero de peltre (medida número 2).</li>
@@ -65,39 +68,51 @@
                 <li>Pociones con el profesor Snape.</li>
             </ol>
         </section>
+        <hr width="70%">
 
         <!-- punto 3: Enlaces -->
         <section>
-            <h2>Enlaces de Interés</h2>
+            <h2> <font color="#080736">Enlaces de Interés</font> </h2>
 
             <!-- Enlace que abre en nueva pestaña -->
-            <p>Para conocer tu casa oficial antes de llegar, puedes hacer el test en el sitio de <a href="https://www.wizardingworld.com" target="_blank">Wizarding World</a> </p>
+            <p><font color="#080736">Para conocer tu casa oficial antes de llegar, puedes hacer el test en el sitio de <a href="https://www.wizardingworld.com" target="_blank">Wizarding World</a></font></p>
+            <p><font color="#080736">Cada estudiante es asignado a una casa según sus cualidades y valores.</font></p>
+           
+            <!--tabla de casas-->            
+            <table border="1" bgcolor="black">
+                <tr><th><font color="silver">Casa</font></th>
+                    <th><font color="silver">Valor Principal</font></th></tr>
+
+                <tr><td><font color="red">Gryffindor</font></td><td><font color="red">Valentía</font></td></tr>
+                <tr><td><font color="green">Slytherin</font></td><td><font color="green">Ambición</font></td></tr>
+                <tr><td><font color="blue">Ravenclaw</font></td><td><font color="blue">Sabiduría</font></td></tr>
+                <tr><td><font color="yellow">Hufflepuff</font></td><td><font color="yellow">Lealtad</font></td></tr>
+            </table>
 
             <!-- Enlace que abre en la misma pestaña -->
-            <p>Si necesitas revisar las reglas de la escuela, lee el reglamento en la sección de <a href="#formulario-inscripcion">Registro de Estudiantes</a>.</p>
+            <p><font color="#080736">Si necesitas revisar las reglas de la escuela, lee el reglamento en la sección de <a href="#formulario-inscripcion">Registro de Estudiantes</a>.</font></p>
         </section>
+        <hr width="70%">
 
         <!-- punto 6: Figura con imagen y leyenda -->
         <section>
-            <h2> <font color="black">La Mascota Escolar</font></h2>
+            <h2> <font color="#080736">La Mascota Escolar</font></h2>
             <figure>
                 <img src="https://wallpapers.com/images/high/aesthetic-harry-potter-white-owl-mo6i5xcd40ktagdc.webp" alt="Lechuza blanca en la nieve">
-                <figcaption>
-                    <font color="white">
-                    Las lechuzas blancas son las preferidas por los estudiantes para enviar y recibir correspondencia mágica.
-                    </font>
-                </figcaption>
+                <figcaption><font color="#080736">Las lechuzas blancas son las preferidas por los estudiantes para enviar y recibir correspondencia mágica. </font></figcaption>
             </figure>
         </section>
+        <hr width="70%">
 
-        <!-- Consigna 5: Formulario -->
-        <section id="formulario-inscripcion"><font color="turquoise">
-            <h2>Formulario de Registro de Alumnos</h2> </font>
-
+        <!-- Consigna 5: Formulario  divido con caja oscura-->
+        <section id="formulario-inscripcion">
+            <div style="background-color:rgba(0,0,0,0.7); padding:20px; border-radius:10px;">
             <form action="#">
+            <h2><font color="Khaki">✨ Formulario de Registro de Alumnos ✨</h2> </font>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh8ouFTrYB6GpPEnhaQX2WVOfwuky-tQToCTfmTZyTNA&s=10" alt="carta de aceptacion">
 
-                <!-- Campo de texto obligatorio -->
-                <p> <font color="black"
+                        <!-- Campo de texto obligatorio -->
+                <p>
                     <label for="nombre-mago">Nombre Completo del Mago/Bruja:</label>
                     <input type="text" id="nombre-mago" name="nombre-mago" required>
                 </p>
@@ -126,26 +141,26 @@
                     <label for="interes2">Astronomía Mágica</label><br>                                                                      
                     </font>
                 </p>
+                <p><font color="gold">⚡✨Una lechuza se pondrá en contacto contigo tras revisar tu inscripción.✨⚡</font></p>
 
                 <!-- Botón de envío -->
                 <p>
                     
                     <input type="text" placeholder="Nombre de usuario">
-                    <button type="submit">Enviar Inscripción a Hogwarts</button>
+                    <button type="submit">⚡ Enviar Inscripción a Hogwarts ⚡</button>
                 </p>
-
+                  </div>
             </form>
         </section>
+        <hr width="70%">
 
     </main>
 
     <!-- punto 7: pie de pagina  con párrafo y enlace -->
     <footer>
         <font color="black">
+        <p> 📧 <a href="mailto:lechuzas@hogwarts.edu">Enviar lechuza de soporte </a></p>
         <p>&copy; 2026 Ministerio de Magia - Departamento de Educación Mágica.</p>
-        <p><a href="mailto:lechuzas@hogwarts.edu">Enviar lechuza de soporte (Email)</a></p>
     </footer>
-
-    </center>
 </body>
 </html>
