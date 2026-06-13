@@ -7,9 +7,14 @@
 
     <!-- punto 2: Título de la página -->
     <title>Inscripciones Hogwarts</title>
-</head>
-<body >
 
+    
+</head>
+<!--imagen de fondo-->
+   <body background="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGfWQFD6CTBVB86qF98QwAQo743Ix2IdJ3ZfhWShSYdakcQHDLRckGvrE&s=10" text="white">
+    
+    <!--todo el bloque centrado-->
+    <center>
     <!-- punto 2: Encabezado principal -->
     <header>
         <h1>Colegio Hogwarts de Magia y Hechicería</h1>
@@ -28,6 +33,11 @@
             <!-- Consigna 3: Imagen con atributos src y alt -->
              <a href="https://www.gettyimages.es/fotos/harry-potter-castle" target="_blank">
                  <img src="https://i.blogs.es/753e95/harry-potter-y-la-piedra-filosofal/500_333.jpeg" alt="Castillo antiguo rodeado de montañas que recuerda a Hogwarts">
+                 <figcaption>
+                    <font color="white">
+                    El majestuoso castillo de Hogwarts, hogar de generaciones de magos y brujas.
+                    </font>
+                </figcaption>
                 </a>
         </section>
 
@@ -40,7 +50,7 @@
             <h3>Lista de Uniforme y Equipo:</h3>
 
             <!-- punto 4: Lista desordenada -->
-            <ul>
+            <ul  </ul style="list-style-position: inside;">            
                 <li>Tres túnicas sencillas de trabajo (negras).</li>
                 <li>Un sombrero puntiagudo para uso diario.</li>
                 <li>Un caldero de peltre (medida número 2).</li>
@@ -49,7 +59,7 @@
             <h3>Asignaturas del primer año:</h3>
 
             <!-- punto 4: Lista ordenada -->
-            <ol>
+            <ol style="list-style-position: inside;">
                 <li>Transformaciones con la profesora McGonagall.</li>
                 <li>Defensa Contra las Artes Oscuras.</li>
                 <li>Pociones con el profesor Snape.</li>
@@ -61,29 +71,33 @@
             <h2>Enlaces de Interés</h2>
 
             <!-- Enlace que abre en nueva pestaña -->
-            <p>Para conocer tu casa oficial antes de llegar, puedes hacer el test en el sitio de <a href="https://www.wizardingworld.com" target="_blank">Wizarding World</a> (se abre en una pestaña nueva).</p>
+            <p>Para conocer tu casa oficial antes de llegar, puedes hacer el test en el sitio de <a href="https://www.wizardingworld.com" target="_blank">Wizarding World</a> </p>
 
             <!-- Enlace que abre en la misma pestaña -->
-            <p>Si necesitas revisar las reglas de la escuela, lee el reglamento en la sección de <a href="#formulario-inscripcion">Registro de Estudiantes</a> (se abre en la misma pestaña).</p>
+            <p>Si necesitas revisar las reglas de la escuela, lee el reglamento en la sección de <a href="#formulario-inscripcion">Registro de Estudiantes</a>.</p>
         </section>
 
         <!-- punto 6: Figura con imagen y leyenda -->
         <section>
-            <h2>La Mascota Escolar</h2>
+            <h2> <font color="black">La Mascota Escolar</font></h2>
             <figure>
                 <img src="https://wallpapers.com/images/high/aesthetic-harry-potter-white-owl-mo6i5xcd40ktagdc.webp" alt="Lechuza blanca en la nieve">
-                <figcaption>Las lechuzas blancas son las preferidas por los estudiantes para enviar y recibir correspondencia mágica.</figcaption>
+                <figcaption>
+                    <font color="white">
+                    Las lechuzas blancas son las preferidas por los estudiantes para enviar y recibir correspondencia mágica.
+                    </font>
+                </figcaption>
             </figure>
         </section>
 
         <!-- Consigna 5: Formulario -->
-        <section id="formulario-inscripcion">
-            <h2>Formulario de Registro de Alumnos</h2>
+        <section id="formulario-inscripcion"><font color="turquoise">
+            <h2>Formulario de Registro de Alumnos</h2> </font>
 
             <form action="#">
 
                 <!-- Campo de texto obligatorio -->
-                <p>
+                <p> <font color="black"
                     <label for="nombre-mago">Nombre Completo del Mago/Bruja:</label>
                     <input type="text" id="nombre-mago" name="nombre-mago" required>
                 </p>
@@ -103,21 +117,20 @@
                 </p>
 
                 <!-- Grupo de casillas de verificación -->
-                <p>
-                    <label>Selecciona tus áreas de interés mágico:</label><br>
-
-                    <input type="checkbox" id="interes1" name="intereses" value="quidditch">
-                    <label for="interes1">Jugar al Quidditch</label><br>
-
-                    <input type="checkbox" id="interes2" name="intereses" value="duelos">
-                    <label for="interes2">Club de Duelos</label><br>
-
+                 <label>¿En qué clubes mágicos te gustaría participar?</label><br> 
                     <input type="checkbox" id="interes3" name="intereses" value="criaturas">
-                    <label for="interes3">Cuidado de Criaturas Mágicas</label>
+                    <label for="interes3">Cuidado de Criaturas Mágicas</label><br>
+                    <input type="checkbox" id="interes1" name="intereses" value="duelos">
+                    <label for="interes1">Duelos Mágicos</label><br>
+                    <input type="checkbox" id="interes2" name="intereses" value="astronomia">
+                    <label for="interes2">Astronomía Mágica</label><br>                                                                      
+                    </font>
                 </p>
 
                 <!-- Botón de envío -->
                 <p>
+                    
+                    <input type="text" placeholder="Nombre de usuario">
                     <button type="submit">Enviar Inscripción a Hogwarts</button>
                 </p>
 
@@ -126,11 +139,13 @@
 
     </main>
 
-    <!-- punto 7: Footer con párrafo y enlace -->
+    <!-- punto 7: pie de pagina  con párrafo y enlace -->
     <footer>
+        <font color="black">
         <p>&copy; 2026 Ministerio de Magia - Departamento de Educación Mágica.</p>
         <p><a href="mailto:lechuzas@hogwarts.edu">Enviar lechuza de soporte (Email)</a></p>
     </footer>
 
+    </center>
 </body>
 </html>
